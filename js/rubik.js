@@ -1,20 +1,18 @@
 /**
  * Implementation of Drupal behavior.
  */
-(function($) {
-Drupal.behaviors.rubik = {};
-Drupal.behaviors.rubik.attach = function(context) {
+Drupal.behaviors.rubik = function(context) {
   // If there are both main column and side column buttons, only show the main
   // column buttons if the user scrolls past the ones to the side.
-  $('div.form:has(div.column-main div.form-actions):not(.rubik-processed)').each(function() {
+  $('div.form:has(div.column-main div.buttons):not(.rubik-processed)').each(function() {
     var form = $(this);
-    var offset = $('div.column-side div.form-actions', form).height() + $('div.column-side div.form-actions', form).offset().top;
+    var offset = $('div.column-side div.buttons', form).height() + $('div.column-side div.buttons', form).offset().top;
     $(window).scroll(function () {
       if ($(this).scrollTop() > offset) {
-        $('div.column-main div.form-actions', form).show();
+        $('div.column-main div.buttons', form).show();
       }
       else {
-        $('div.column-main div.form-actions', form).hide();
+        $('div.column-main div.buttons', form).hide();
       }
     });
     form.addClass('rubik-processed');
@@ -40,4 +38,3 @@ Drupal.behaviors.rubik.attach = function(context) {
     $(this).addClass('rubik-processed');
   });
 };
-})(jQuery);
