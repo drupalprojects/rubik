@@ -154,3 +154,12 @@ select.form-select:focus {
 #edit-options-exception.collapsible {
     margin-top: 0;
 }
+.views-ui-dialog fieldset,
+.views-ui-dialog fieldset.collapsed,
+.views-ui-dialog fieldset.collapsible {
+    padding-top:0;
+}
+#edit-options-default-action {
+  float: none;
+  margin-bottom: 10px;
+}
