@@ -112,7 +112,7 @@ function rubik_preprocess_page(&$vars) {
   $vars['content_region'] = theme('blocks_content', TRUE);
 
   // Set a page icon class.
-  $vars['page_icon_class'] = tao_drupal_html_class(($item = menu_get_item()) ? _rubik_icon_classes($item['href']) : '');
+  $vars['page_icon_class'] = ($item = menu_get_item()) ? _rubik_icon_classes($item['href']) : '';
 
   // Add body class for theme.
   $vars['attr']['class'] .= ' rubik';
@@ -583,7 +583,7 @@ function _rubik_icon_classes($path) {
   $args = explode('/', $path);
   if ($args[0] === 'admin' || (count($args) > 1 && $args[0] === 'node' && $args[1] === 'add')) {
     while (count($args)) {
-      $classes[] = 'path-'. str_replace('/', '-', implode('/', $args));
+      $classes[] = tao_drupal_html_class('path-'. str_replace('/', '-', implode('/', $args)));
       array_pop($args);
     }
     return implode(' ', $classes);
