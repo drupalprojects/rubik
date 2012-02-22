@@ -112,7 +112,7 @@ function rubik_preprocess_page(&$vars) {
   $vars['content_region'] = theme('blocks_content', TRUE);
 
   // Set a page icon class.
-  $vars['page_icon_class'] = ($item = menu_get_item()) ? _rubik_icon_classes($item['href']) : '';
+  $vars['page_icon_class'] = tao_drupal_html_class(($item = menu_get_item()) ? _rubik_icon_classes($item['href']) : '');
 
   // Add body class for theme.
   $vars['attr']['class'] .= ' rubik';
