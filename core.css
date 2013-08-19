@@ -446,7 +446,7 @@ select.form-select {
     }
 
   html.js input.form-autocomplete { background-position:100% 7px; }
-  html.js input.throbbing { background-position:100% -13px; }
+  html.js input.throbbing { background-position:100% -2px; }
 
 #search-block-form .form-wrapper.form-actions {
   background: none;
