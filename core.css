@@ -186,12 +186,14 @@ table tr.region td { background:#f8f8f8; }
 
 /* Hide tabledrag markers */
 table tr.draggable span.tabledrag-changed { display:none; }
- 
+
+table.field-multiple-table td { padding: 10px; }
+
 /* Stripe administrative tables */
 .page-admin table tr.even, .page-admin table tr.even td {
   background: #f9f9f9;
 }
-               
+
 /**
  * Forms ==============================================================
  */
@@ -442,8 +444,6 @@ select.form-select {
     -webkit-box-sizing:border-box;
     width:100%;
     }
-
-    table input.fluid { width:auto; }
 
   html.js input.form-autocomplete { background-position:100% 7px; }
   html.js input.throbbing { background-position:100% -13px; }
