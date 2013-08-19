@@ -509,16 +509,17 @@ body.page-admin div.vertical-tabs .vertical-tabs-panes .vertical-tabs-pane field
     position:absolute;
     left:-20px;
     top:4px;
-    background:url(images/bleeds.png) -20px -180px no-repeat;
+    background:url(images/bleeds.png) -20px -120px no-repeat;
     width:20px;
     height:20px;
     display:block;
     cursor:pointer;
     }
 
-    html.js .collapsed .fieldset-legend span.icon { background-position:0px -180px; }
+    html.js .collapsed .fieldset-legend span.icon { background-position:0px -120px; }
 
-    .fieldset .collapsible .fieldset-legend span.icon { display:none; }
+    .fieldset .collapsible .fieldset-legend span.icon,
+    html.js .fieldset .collapsible .fieldset-legend span.icon { display:none; }
 
   .collapsed .fieldset-legend a {
     background:#eee;
