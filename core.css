@@ -262,6 +262,19 @@ table .form-item {
 
   .page-content .form-item:hover > .description { display:block; }
 
+/* Date module fix */                                                                                
+.page-content div.date-clear div.description {                                                       
+  position: relative;                                                                                
+  top: 0;                                                                                            
+  left: 0;                                                                                           
+  background: none;                                                                                  
+  width: auto;                                                                                       
+  margin: 0;                                                                                         
+  padding: 0;                                                                                        
+  display: block;                                                                                    
+  border: 0px;                                                                                       
+}
+
 input.teaser-button,
 input.form-submit {
   cursor:pointer;
