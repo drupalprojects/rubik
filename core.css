@@ -337,6 +337,10 @@ table .item-list,
   padding:9px 10px 20px;
   display:none;
   }
+  
+  .page-content .form-item.form-type-checkbox .description {
+    bottom: 150%;
+    }
 
   .page-content .form-item:hover {
     z-index:1;
