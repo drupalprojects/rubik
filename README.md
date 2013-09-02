@@ -97,14 +97,6 @@ etc. **This is the file you will most likely want to override to begin your
 subtheme.**
 
 
-Issue tracking
---------------
-The code for Rubik is hosted on GitHub. Please report issues and submit
-patches/fork requests at http://github.com/developmentseed/rubik. You can
-download packages of the latest release of Rubik at
-http://code.developmentseed.org/tao.
-
-
 Maintainer
 ----------
 - yhahn (Young Hahn)
