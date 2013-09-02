@@ -17,4 +17,5 @@ stylesheets[print][] = print.css
 
 ; Support shortcut module links
 settings[shortcut_module_link] = 1
+settings[rubik_inline_field_descriptions] = 0
 
