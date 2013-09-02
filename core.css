@@ -119,6 +119,13 @@ div.status {
   .node-type-list li:last-child,
   .admin-list li:last-child { border:0px; }
 
+/* Fix default spacing between the links displayed in "Operations" column. */
+td ul.links.inline.operations li:not(:last-child) {
+  padding: 0 10px 0 0;
+  margin: 0 8px 0 0;
+  border-right: 1px solid #DDD;
+  }
+
 /**
  * Tables =============================================================
  */
