@@ -345,7 +345,7 @@ function rubik_breadcrumb($vars) {
     $item = menu_get_item();
     $end = end($vars['breadcrumb']);
     if ($end && strip_tags($end) !== $item['title']) {
-      $vars['breadcrumb'][] = "<strong>". check_plain($item['title']) ."</strong>";
+      $vars['breadcrumb'][] = check_plain($item['title']);
     }
   }
 
@@ -357,6 +357,13 @@ function rubik_breadcrumb($vars) {
 
   $depth = 0;
   foreach ($vars['breadcrumb'] as $link) {
+
+    // If the item isn't a link, surround it with a strong tag to format it like
+    // one.
+    if (!preg_match('/^<a/', $link) && !preg_match('/^<strong/', $link)) {
+      $link = '<strong>' . $link . '</strong>';
+    }
+
     $output .= "<span class='breadcrumb-link breadcrumb-depth-{$depth}'>{$link}</span>";
     $depth++;
   }
