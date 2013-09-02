@@ -326,7 +326,7 @@ function rubik_preprocess_admin_block(&$vars) {
   }
   $vars['block']['localized_options']['html'] = TRUE;
   if (isset($vars['block']['link_title'])) {
-    $vars['block']['title'] = l("<span class='icon'></span>" . filter_xss_admin($vars['block']['link_title']), $vars['block']['href'], $vars['block']['localized_options']);
+    $vars['block']['title'] = l("<span class='icon'></span>" . filter_xss_admin($vars['block']['title']), $vars['block']['href'], $vars['block']['localized_options']);
   }
 
   if (empty($vars['block']['content'])) {
