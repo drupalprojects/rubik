@@ -197,8 +197,26 @@ table tr.draggable span.tabledrag-changed { display:none; }
 table.field-multiple-table td { padding: 10px; }
 
 /* Stripe administrative tables */
-.page-admin table tr.even, .page-admin table tr.even td {
-  background: #f9f9f9;
+.page-admin table tr.even,
+.page-admin table tr.even td {
+  background-color: #f9f9f9;
+}
+
+/* Use Drupal's default colors for Available Updates page statuses */
+.page-admin table tr.warning,
+.page-admin table tr.warning td {
+  background-color: #ffd;
+  color: #020;
+}
+.page-admin table tr.ok,
+.page-admin table tr.ok td {
+  background-color: #dfd;
+  color: #020;
+}
+.page-admin table tr.error,
+.page-admin table tr.error td {
+  background-color: #fcc;
+  color: #020;
 }
 
 /* Overrides the striping with core classes for errors and warnings */
