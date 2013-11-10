@@ -285,7 +285,9 @@ function rubik_preprocess_help_page(&$vars) {
  */
 function rubik_preprocess_node(&$vars) {
   $vars['layout'] = TRUE;
-  $vars['submitted'] = _rubik_submitted($vars['node']);
+  if ($vars['display_submitted']) {
+    $vars['submitted'] = _rubik_submitted($vars['node']);
+  }
 }
 
 /**
