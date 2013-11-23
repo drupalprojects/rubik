@@ -210,6 +210,13 @@ div.pager {
   background:#eee url(images/bleeds.png) 50% 0px no-repeat;
   }
 
+ul.primary-tabs.links li,
+ul.pager.links li {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: 0;
+  }
+
 .pager a,
 .pager span,
 .primary-tabs a {
@@ -306,6 +313,23 @@ ul.secondary-tabs li a {
     border-radius:3px 3px 0px 0px;
     -moz-border-radius:3px 3px 0px 0px;
     -webkit-border-radius:3px 3px 0px 0px;
+    }
+
+/**
+ * Links ==============================================================
+ *
+ * ul.links are floated by tao with no spacing. Add some styling
+ */
+ul.links li {
+  padding-right: 0.5em;
+  border-right: 1px solid #eee;
+  margin-right: 0.5em;
+  }
+
+  ul.links li.last {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: 0;
     }
 
 /**
