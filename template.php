@@ -226,6 +226,11 @@ function rubik_preprocess_form_node(&$vars) {
       }
     }
   }
+  // Support vt_default if affecting current form.
+  elseif (isset($vars['form']['vertical_tab_default']['taxonomy']) && empty($vars['sidebar'])) {
+    $vars['sidebar']['taxonomy'] = $vars['form']['vertical_tab_default']['taxonomy'];
+    unset($vars['form']['vertical_tab_default']['taxonomy']);
+  }
   // Default to showing taxonomy in sidebar if nodeformcols is not present.
   elseif (isset($vars['form']['taxonomy']) && empty($vars['sidebar'])) {
     $vars['sidebar']['taxonomy'] = $vars['form']['taxonomy'];
