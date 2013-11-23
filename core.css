@@ -255,12 +255,6 @@ table.field-multiple-table td { padding: 10px; }
   margin-bottom: 10px;
   }
 
-.form-wrapper .form-item,
-.form-wrapper .form-wrapper {
-  border:0;
-  margin-bottom:0;
-  }
-
 .media-widget.form-wrapper{
   padding-bottom:10px;
   }
@@ -553,23 +547,23 @@ body.page-admin div.vertical-tabs .vertical-tabs-panes .vertical-tabs-pane field
   .collapsible .fieldset-legend a { padding-bottom:4px; }
 
   /* Explicit height for IE */
-  .collapsible .fieldset-legend a { height:20px; }
+  .collapsible .fieldset-legend a {
+    height:20px;
+    padding-left:28px;
+  }
 
   .collapsible .fieldset-legend span.icon {
     position:absolute;
-    left:-20px;
-    top:4px;
-    background:url(images/bleeds.png) -20px -120px no-repeat;
-    width:20px;
-    height:20px;
+    left:6px;
+    top:6px;
+    background:url(images/bleeds.png) -80px -120px no-repeat;
+    width: 15px;
+    height: 15px;
     display:block;
     cursor:pointer;
     }
 
-    html.js .collapsed .fieldset-legend span.icon { background-position:0px -120px; }
-
-    .fieldset .collapsible .fieldset-legend span.icon,
-    html.js .fieldset .collapsible .fieldset-legend span.icon { display:none; }
+    html.js .collapsed .fieldset-legend span.icon { background-position:-60px -120px; }
 
   .collapsed .fieldset-legend a {
     background:#eee;
