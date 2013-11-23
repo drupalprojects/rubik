@@ -721,19 +721,20 @@ body.page-admin div.vertical-tabs .vertical-tabs-panes .vertical-tabs-pane field
 /* admin/appearance */
 .theme-selector {
   position:relative;
-  padding:9px 9px 9px 139px;
+  padding:9px 9px 9px 314px;
   border:1px solid #ddd;
   margin:10px 0px;
-  min-height:80px;
+  min-height:224px;
   text-shadow:#fff 0px 1px 0px;
   }
 
 .theme-selector img {
-  left:10px;
-  top:10px;
-  position:absolute;
-  clip:rect(0px 120px 80px 0px); /* IE6, IE7 */
-  clip:rect(0px,120px,80px,0px);
+  clip: rect(0px, 294px, 219px, 0px);
+  height: auto;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 294px;
   }
 
 .theme-selector .operations a { margin-right:20px; }
@@ -741,7 +742,13 @@ body.page-admin div.vertical-tabs .vertical-tabs-panes .vertical-tabs-pane field
 .system-themes-list-disabled .theme-selector {
   background:#eee;
   color:#676767;
+  padding:9px 9px 9px 162px;
+  min-height:110px;
   }
+
+.system-themes-list-disabled .theme-selector img {
+  width: 142px;
+}
 
 /* admin/content/node & admin/user/user */
 .exposed-filters .form-item label {
