@@ -633,6 +633,18 @@ body.page-admin div.vertical-tabs .vertical-tabs-panes .vertical-tabs-pane field
   padding:0px;
   }
 
+.form-type-date-popup label {
+  padding: 10px 10px 0 10px;
+}
+
+.form-type-date-popup .date-padding label {
+  padding: 0;
+}
+
+.form-type-date-popup .date-padding {
+  padding-top: 0;
+}
+
 /**
  * Form layout: Default ===============================================
  */
