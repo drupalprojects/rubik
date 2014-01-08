@@ -25,7 +25,7 @@ Drupal.behaviors.rubik.attach = function(context) {
     // Target exists, add click handler.
     if ($('#' + id).size() > 0) {
       $(this).click(function() {
-        toggleable = $('#' + id);
+        var toggleable = $('#' + id);
         toggleable.toggle();
         $(this).toggleClass('toggler-active');
         return false;
@@ -43,7 +43,7 @@ Drupal.behaviors.rubik.attach = function(context) {
 $(document).ready(function() {
   // If there's no active secondary tab, make the first one show.
   var activeli = $('.primary-tabs li.active .secondary-tabs li.active');
-  if (activeli.length == 0) {
+  if (activeli.length === 0) {
     $('.primary-tabs li.active .secondary-tabs li:first-child a').css('display', 'block');
   }
 });
