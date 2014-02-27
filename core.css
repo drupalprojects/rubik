@@ -46,6 +46,13 @@ div.status {
   background-color:#ecf8f4;
   }
 
+table tr.merge-down td {border-bottom: 0;}
+table tr.merge-up td {border-top: 0;}
+table td.status-description {
+  padding: 3px 40px;
+  font-size: .9em;
+}
+
   div.error   { border-color:#ffd4d0; }
   div.warning { border-color:#ffe4b0; }
   div.status  { border-color:#dce8e4; }
@@ -313,7 +320,6 @@ table .item-list,
   color:#666;
   font-weight:bold;
   font-size:10px;
-  text-transform:uppercase;
   }
 
   .form-item label.option {
@@ -704,7 +710,6 @@ body.page-admin div.vertical-tabs .vertical-tabs-panes .vertical-tabs-pane field
 .box-title {
   font-weight:normal;
   font-size:10px;
-  text-transform:uppercase;
 
   background:#eee;
   border:1px solid #ddd;
