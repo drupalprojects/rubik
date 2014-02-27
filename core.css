@@ -1088,3 +1088,13 @@ div.ctools-modal-content .color-form .form-item input {
 .admin-menu #content .column-side .column-wrapper.fixed {
   top: 40px;
 }
+
+/**
+ * Watchdog/dblog =================================================
+ */
+
+#admin-dblog td {border-color: #ccc;}
+#admin-dblog .dblog-notice td, #admin-dblog .dblog-notice .active {background-color:#ECF8FC;}
+#admin-dblog .dblog-info td, #admin-dblog .dblog-info .active {background-color: #DFF2BF;}
+#admin-dblog .dblog-warning td, #admin-dblog .dblog-warning .active {background-color: #FEEFB3;}
+#admin-dblog .dblog-error td, #admin-dblog .dblog-error .active {background-color: #FFBABA;}
