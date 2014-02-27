@@ -55,7 +55,8 @@ a {
 .compact-link a,
 input.teaser-button,
 input.form-submit,
-a.button {
+a.button,
+.form-actions #edit-cancel {
   -moz-border-radius:3px;
   -webkit-border-radius:3px;
   }
@@ -65,7 +66,8 @@ a.button {
  */
 input.teaser-button,
 input.form-submit,
-a.button {
+a.button,
+.form-actions #edit-cancel {
   box-shadow:#ddd 0px 1px 1px;
   -moz-box-shadow:#ddd 0px 1px 1px;
   -webkit-box-shadow:#ddd 0px 1px 1px;
