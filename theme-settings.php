@@ -23,4 +23,10 @@ function rubik_form_system_theme_settings_alter(&$form, $form_state, $form_id = 
     '#description' => t("By default, each field's description is displayed in a pop-up, which is only visible when hovering over that field. Select this option to make all field descriptions visible at all times."),
     '#default_value' => theme_get_setting('rubik_inline_field_descriptions', 'rubik'),
   );
+  $form['rubik']['rubik_sidebar_field_ui'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Display fields in the sidebar of the node edit form.'),
+    '#description' => t("By default, each field is displayed in the main content area of the node edit form. This option allows you to move fields into the sidebar to improve user experience."),
+    '#default_value' => theme_get_setting('rubik_sidebar_field_ui', 'rubik'),
+  );
 }

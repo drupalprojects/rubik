@@ -534,6 +534,43 @@ function rubik_render_clone($elements) {
   return drupal_render($elements);
 }
 
+function rubik_form_field_ui_field_edit_form_alter(&$form, &$form_state) {
+  $rubik_sidebar_field_ui = theme_get_setting('rubik_sidebar_field_ui', 'rubik');
+    if ($rubik_sidebar_field_ui == TRUE) {
+      $options = array(
+        'default' => t('Default'),
+        'rubik_sidebar_field' => t('Sidebar'),
+      );
+      $default = (isset($form_state['build_info']['args'][0]['rubik_edit_field_display'])) ? $form_state['build_info']['args'][0]['rubik_edit_field_display'] : 'default';
+      $form['instance']['rubik_edit_field_display'] = array(
+        '#type' => 'radios',
+        '#title' => t('Set field display location'),
+        '#description' => t('Choose where this field should be displayed.'),
+        '#default_value' => $default,
+        '#options' => $options,
+      );
+    }
+  }
+
+  function rubik_form_node_form_alter(&$form, $form_state) {
+    $rubik_sidebar_field_ui = theme_get_setting('rubik_sidebar_field_ui', 'rubik');
+    if ($rubik_sidebar_field_ui == TRUE) {
+      if (isset($form_state['field']) && is_array($form_state['field'])) {
+        foreach ($form_state['field'] AS $name => $field) {
+          if (!isset($field[LANGUAGE_NONE]['instance'])) {
+            continue;
+          }
+          if (isset($field[LANGUAGE_NONE]['instance']['rubik_edit_field_display'])) {
+            $display = $field[LANGUAGE_NONE]['instance']['rubik_edit_field_display'];
+            if ($display == 'rubik_sidebar_field') {
+              $form[$name]['#attributes']['class'][] = 'rubik_sidebar_field';
+            }
+          }
+        }
+      }
+    }
+  }
+
 /**
  * Helper function to submitted info theming functions.
  */
