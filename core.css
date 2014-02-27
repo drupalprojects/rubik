@@ -457,6 +457,7 @@ input.form-submit, a.button {
 
 input.form-autocomplete,
 input.form-text,
+input.form-file,
 textarea.form-textarea,
 select.form-select {
   padding:3px;
@@ -470,10 +471,12 @@ select.form-select {
 
   input.form-autocomplete:hover,
   input.form-text:hover,
+  input.form-file:hover,
   textarea.form-textarea:hover,
   select.form-select:hover,
   input.form-autocomplete:focus,
   input.form-text:focus,
+  input.form-file:focus,
   textarea.form-textarea:focus,
   select.form-select:focus {
     color:#333;
@@ -487,6 +490,11 @@ select.form-select {
     box-sizing: border-box;
     width:100%;
     }
+
+  input.form-file {
+    padding: 1px;
+    margin-right: 3px;
+  }
 
   html.js input.form-autocomplete { background-position:100% 7px; }
   html.js input.throbbing { background-position:100% -2px; }
