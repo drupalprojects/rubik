@@ -361,7 +361,7 @@ table .item-list,
     }
 
   .page-content .form-item:hover {
-    z-index:1;
+    z-index:10;
     height:auto; /* Fix for flicker in IE7 */
     }
 
