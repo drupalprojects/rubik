@@ -216,9 +216,12 @@ function rubik_preprocess_button(&$vars) {
     $classes = array(
       t('Save') => 'yes',
       t('Submit') => 'yes',
-      t('Add') => 'yes',
-      t('Delete') => 'no',
+      t('Yes') => 'yes',
+      t('Add') => 'add',
+      t('Delete') => 'remove',
+      t('Remove') => 'remove',
       t('Cancel') => 'no',
+      t('No') => 'no',
     );
     foreach ($classes as $search => $class) {
       if (strpos($vars['element']['#value'], $search) !== FALSE) {

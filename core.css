@@ -23,6 +23,7 @@ hr { display:none; }
 div.messages {
   color:#036;
   background-color:#f8f8f8;
+  padding:9px;
   border:1px solid #ccc;
   margin:0px 0px 10px;
   }
@@ -326,6 +327,20 @@ table .item-list,
     text-transform:none;
     font-size:11px;
     }
+		
+	input.button-add {
+	  background-position:-801px 50%;
+	  padding-left:25px;
+	  }
+
+	input.button-add:active { background-position:-1201px 50%; }
+
+	input.button-remove {
+	  background-position:-1601px 50%;
+	  padding-left:25px;
+	  }
+
+	input.button-remove:active { background-position:-2001px 50%; }
 
   .form-item label.option input { vertical-align:middle; }
 
