@@ -52,7 +52,7 @@ table tr.merge-up td {border-top: 0;}
 table td.status-description {
   padding: 3px 40px;
   font-size: .9em;
-}
+  }
 
   div.error   { border-color:#ffd4d0; }
   div.warning { border-color:#ffe4b0; }
