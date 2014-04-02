@@ -327,7 +327,7 @@ table .item-list,
     text-transform:none;
     font-size:11px;
     }
-		
+
 	input.button-add {
 	  background-position:-801px 50%;
 	  padding-left:25px;
@@ -380,7 +380,7 @@ table .item-list,
   padding:9px 10px 20px;
   display:none;
   }
-  
+
   .page-content .form-item.form-type-checkbox .description {
     bottom: 150%;
     }
@@ -1123,6 +1123,10 @@ div.ctools-modal-content .color-form .form-item input {
  * Media ====================================================
  */
 
+.page-media-browser {overflow:hidden;}
+
+.page-media-browser #block-system-main {border: none;}
+
 .media-widget .preview {
   background-color: #CCC;
   min-width: 50px;
@@ -1139,3 +1143,20 @@ div.ctools-modal-content .color-form .form-item input {
 }
 
 .field-widget-media-generic .field-multiple-table thead .field-label {padding-left: 5px;}
+
+.media-item .label-wrapper label {display: block;}
+
+#media-browser-page {overflow: hidden;}
+#media-browser-page .form-actions {margin-bottom: 0;}
+
+#media-browser-tabset {border: none;}
+#media-browser-tabset #branding {padding: 8px 10px 2px 10px; height: 20px;}
+#media-browser-tabset #branding h1 {margin-top: -3px;}
+
+#media-tabs-wrapper .tabs.primary {margin-right: 10px;}
+
+.media-browser-tab.ui-tabs-panel {border: none; padding-bottom: 0;}
+
+.view-media-default #edit-filename-wrapper {max-width: 200px;}
+
+
