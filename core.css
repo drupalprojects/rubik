@@ -1120,6 +1120,11 @@ div.ctools-modal-content .color-form .form-item input {
 #admin-dblog .dblog-error td, #admin-dblog .dblog-error .active {background-color: #FFBABA;}
 
 /**
+ * Adminimal Administration Menu ===============================================
+ */
+body.adminimal-menu { margin-top: 29px!important; }
+
+/**
  * Media ====================================================
  */
 
