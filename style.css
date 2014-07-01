@@ -405,3 +405,7 @@ div.node .column-side .column-wrapper {
   text-shadow: none;
   color: #666;
 }
+/* Module filter "clear" link. */
+.module-filter-clear a {
+  margin: 3px 0 0 -35px;
+}
