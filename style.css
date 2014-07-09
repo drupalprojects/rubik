@@ -309,6 +309,21 @@ ul.secondary-tabs li a {
     -webkit-border-radius:3px 3px 0px 0px;
     }
 
+ul.secondary.tabs {
+    position: static;
+    float: right;
+    font-size: 0.923em;
+    padding: 0 3px 5px;
+    line-height: 1.385em;
+    overflow: hidden;
+    background-color: #fff;
+    }
+
+  ul.secondary.tabs li {
+    margin: 0 5px;
+    float: none;
+    display: inline;
+    }
 /**
  * Content ============================================================
  */
