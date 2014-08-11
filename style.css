@@ -420,6 +420,22 @@ div.node .column-side .column-wrapper {
   text-shadow: none;
   color: #666;
 }
+/* Views exposed filters forms. */
+div.views-exposed-form {
+  margin-bottom: 20px;
+}
+div.views-exposed-form div.form-item {
+  border: 0;
+  padding: 0;
+}
+div.views-exposed-form div.views-submit-button {
+  margin-right: 1em;
+}
+div.views-exposed-form input.form-text,
+div.views-exposed-form select.form-select,
+div.views-exposed-form input.form-autocomplete {
+  height: 28px;
+}
 /* Module filter "clear" link. */
 .module-filter-clear a {
   margin: 3px 0 0 -35px;
