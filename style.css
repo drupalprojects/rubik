@@ -420,6 +420,19 @@ div.node .column-side .column-wrapper {
   text-shadow: none;
   color: #666;
 }
+/* Fix the position of Rules table drag toggle. It uses "position: absolute", so
+it is necessary to set "position: relative" to the parent, so that the button
+stays in the same frame. */
+#rules-form-wrapper {
+  position: relative;
+}
+/* Fix the padding of Rules table drag toggle. Out of the box it is optimized
+for display in table headers, while in Rules it is displayed outside of the
+tables, in the same line as table heading. */
+#rules-form-wrapper .rules-elements-table .tabledrag-toggle-weight-wrapper {
+  padding-top: 0;
+  padding-right: 0;
+}
 /* Views exposed filters forms. */
 div.views-exposed-form {
   margin-bottom: 20px;
