@@ -71,7 +71,7 @@ Drupal.behaviors.rubik.attach = function(context) {
     }
 
     // Move fields to sidebar.
-    $(".rubik_sidebar_field").each(function() {
+    $('.rubik_sidebar_field', context).once('rubik', function() {
       $('.column-side .column-wrapper').append($(this));
     });
   }
