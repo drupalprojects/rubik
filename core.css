@@ -1130,6 +1130,50 @@ div.ctools-modal-content .color-form .form-item input {
 body.adminimal-menu { margin-top: 29px!important; }
 
 /**
+ * Breakpoints ===============================================
+ */
+
+#breakpoints-admin-breakpoints #edit-buttons input,
+#breakpoints-admin-breakpoints  #edit-buttons a {
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+.breakpoints-group-operations-link {
+  display: inline-block;
+  cursor:pointer;
+  padding:3px 10px;
+  color:#333;
+  font-size:13px;
+  text-align:center;
+  font-weight:normal;
+  border-width:1px;
+  border-style:solid;
+  border-color:#ddd #ddd #ccc;
+  background:#fff url(images/buttons.png) -1px 50% no-repeat;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: #ddd 0 1px 1px;
+  -moz-box-shadow: #ddd 0 1px 1px;
+  box-shadow: #ddd 0 1px 1px;
+}
+
+.breakpoints-group-operations-link:hover {
+  border-color:#ace;
+  -webkit-box-shadow:#ace 0 0 5px;
+  -moz-box-shadow:#ace 0 0 5px;
+  box-shadow:#ace 0 0 5px;
+}
+
+.breakpoints-group-operations-link:active {
+  border-color:#666 #666 #555;
+  background:#666 url(images/buttons.png) -401px 50% no-repeat;
+  color:#222;
+  text-shadow:#999 0 1px 0;
+}
+
+/**
  * Media ====================================================
  */
 
