@@ -716,7 +716,7 @@ body.page-admin div.vertical-tabs .vertical-tabs-panes .vertical-tabs-pane field
 
   .form-wrapper.form-actions input.form-submit, .form-wrapper.form-actions a.button { margin-right:5px; }
 
-  .form-layout-default .column-main .form-actions { display:none; }
+  .form-layout-default .column-main .column-wrapper > .form-actions { display:none; }
   .form-layout-default .column-side .form-actions { margin:0px 0px 10px; }
   .form-layout-default .column-side .form-actions input.form-submit,
   .form-layout-deafult .column-side .form-actions a.button {

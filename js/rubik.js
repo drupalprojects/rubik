@@ -6,15 +6,15 @@ Drupal.behaviors.rubik = {};
 Drupal.behaviors.rubik.attach = function(context) {
   // If there are both main column and side column buttons, only show the main
   // column buttons if the user scrolls past the ones to the side.
-  $('div.form:has(div.column-main div.form-actions):not(.rubik-processed)').each(function() {
+  $('div.form:has(div.column-main div.form-actions):not(.rubik-processed)', context).each(function() {
     var form = $(this);
     var offset = $('div.column-side div.form-actions', form).height() + $('div.column-side div.form-actions', form).offset().top;
     $(window).scroll(function () {
       if ($(this).scrollTop() > offset) {
-        $('div.column-main div.form-actions', form).show();
+        $('div.column-main .column-wrapper > div.form-actions#edit-actions', form).show();
       }
       else {
-        $('div.column-main div.form-actions', form).hide();
+        $('div.column-main .column-wrapper > div.form-actions#edit-actions', form).hide();
       }
     });
     form.addClass('rubik-processed');
