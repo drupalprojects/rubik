@@ -638,16 +638,23 @@ body.page-admin div.vertical-tabs .vertical-tabs-panes .vertical-tabs-pane field
   margin-top:-10px;
   border-top:none;
   }
-.text-format-wrapper .filter-wrapper{
+.text-format-wrapper .filter-wrapper {
   border-top:1px solid #CCC;
   margin-top: 0;
-  }
+}
+.text-format-wrapper .filter-wrapper .form-type-select .filter-list {
+  max-height: 22px;
+}
+.text-format-wrapper .filter-wrapper .form-type-select,
+.text-format-wrapper .filter-wrapper .filter-guidelines {
+  margin: 0;
+  overflow: auto;
+}
 
 .filter-wrapper .fieldset-content,
 .fieldset .fieldset.filter-wrapper .fieldset-content  {
   background:#f8f8f8;
   border-top:0px;
-  height:20px;
   padding:5px 9px 4px;
   }
 
@@ -665,7 +672,8 @@ body.page-admin div.vertical-tabs .vertical-tabs-panes .vertical-tabs-pane field
 .filter-wrapper .filter-help {
   float:right;
   font-size:11px;
-  padding:0px;
+  margin:0;
+  padding:0;
   }
 
 .form-type-date-popup label {
