@@ -3,7 +3,7 @@
  */
 (function($) {
 Drupal.behaviors.rubik = {};
-Drupal.behaviors.rubik.attach = function(context) {
+Drupal.behaviors.rubik.attach = function(context, settings) {
   // If there are both main column and side column buttons, only show the main
   // column buttons if the user scrolls past the ones to the side.
   $('div.form:has(div.column-main div.form-actions):not(.rubik-processed)', context).each(function() {
@@ -51,7 +51,9 @@ Drupal.behaviors.rubik.attach = function(context) {
   });
 
   // Sticky sidebar
-  if ($('#content .column-side .column-wrapper').length !== 0) {
+  // Disable this functionality if the user chooses.
+  var disableSticky = settings.rubik.disable_sticky;
+  if ($('#content .column-side .column-wrapper').length !== 0 && !disableSticky) {
     var rubikColumn = $('#content .column-side .column-wrapper', context);
     if(rubikColumn && rubikColumn.offset()){
         var rubikStickySidebar = rubikColumn.offset().top;
