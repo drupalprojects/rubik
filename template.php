@@ -499,7 +499,8 @@ function rubik_admin_drilldown_menu_item_link($link) {
  */
 function rubik_preprocess_textfield(&$vars) {
   if ($vars['element']['#size'] >= 30 && empty($vars['element']['#field_prefix']) && empty($vars['element']['#field_suffix'])) {
-    $vars['element']['#size'] = '';
+    // Set text field to default size.
+    $vars['element']['#size'] = 20;
     if (!isset($vars['element']['#attributes']['class'])
       || !is_array($vars['element']['#attributes']['class'])) {
        $vars['element']['#attributes']['class'] = array();
