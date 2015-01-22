@@ -1186,15 +1186,12 @@ body.adminimal-menu { margin-top: 29px!important; }
  */
 
 .page-media-browser {overflow:hidden;}
-
 .page-media-browser #block-system-main {border: none;}
-
 .media-widget .preview {
   background-color: #CCC;
   min-width: 50px;
   min-height: 50px;
 }
-
 .media-widget .preview .media-item {margin: 0;}
 .media-widget .preview.launcher > .form-item {padding: 0; border: 0;}
 .media-widget.form-wrapper {margin-bottom: 0;}
@@ -1203,22 +1200,21 @@ body.adminimal-menu { margin-top: 29px!important; }
   border: 0;
   padding: 0;
 }
-
 .field-widget-media-generic .field-multiple-table thead .field-label {padding-left: 5px;}
-
 .media-item .label-wrapper label {display: block;}
-
 #media-browser-page {overflow: hidden;}
 #media-browser-page .form-actions {margin-bottom: 0;}
-
 #media-browser-tabset {border: none;}
 #media-browser-tabset #branding {padding: 8px 10px 2px 10px; height: 20px;}
 #media-browser-tabset #branding h1 {margin-top: -3px;}
-
 #media-tabs-wrapper .tabs.primary {margin-right: 10px;}
-
 .media-browser-tab.ui-tabs-panel {border: none; padding-bottom: 0;}
-
 .view-media-default #edit-filename-wrapper {max-width: 200px;}
 
+/**
+ * Ctools ====================================================
+ */
 
+td.ctools-export-ui-operations {
+  position: relative;
+}
