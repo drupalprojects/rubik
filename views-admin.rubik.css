@@ -42,6 +42,14 @@
   float: left;
 }
 
+#views-ui-edit-form .views-display-top .tabs li li{
+  float: none;
+}
+
+#views-ui-edit-form .views-display-top ul.secondary.tabs {
+  overflow: inherit;
+}
+
 #views-ui-edit-form .pager {
   margin: 0;
   height: auto;
