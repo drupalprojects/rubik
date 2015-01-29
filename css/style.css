@@ -245,15 +245,15 @@ div.pager {
 .primary-tabs li:hover {
   background-color: #f8f8f8;
 }
-.pager li: first-child,
-.primary-tabs li: first-child {
+.pager li:first-child,
+.primary-tabs li:first-child {
   -webkit-border-radius: 5px 0px 0px 5px;
      -moz-border-radius: 5px 0px 0px 5px;
           border-radius: 5px 0px 0px 5px;
   background-position: 0% 0px;
 }
-.pager li: last-child,
-.primary-tabs li: last-child {
+.pager li:last-child,
+.primary-tabs li:last-child {
   -webkit-border-radius: 0px 5px 5px 0px;
      -moz-border-radius: 0px 5px 5px 0px;
           border-radius: 0px 5px 5px 0px;
@@ -309,12 +309,12 @@ ul.secondary-tabs li a {
 .secondary-tabs a:hover {
   background: #389 url(../images/buttons.png) -800px 50% no-repeat;
 }
-.secondary-tabs li: last-child a:hover {
+.secondary-tabs li:last-child a:hover {
   -webkit-border-radius: 0px 0px 3px 3px;
      -moz-border-radius: 0px 0px 3px 3px;
           border-radius: 0px 0px 3px 3px;
 }
-.secondary-tabs li: first-child a:hover {
+.secondary-tabs li:first-child a:hover {
   -webkit-border-radius: 3px 3px 0px 0px;
      -moz-border-radius: 3px 3px 0px 0px;
           border-radius: 3px 3px 0px 0px;
