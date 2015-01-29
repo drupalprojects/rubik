@@ -61,7 +61,7 @@ table td.permission { padding-right:19px; }
 .collapsible .fieldset-title span.icon {
   left:auto;
   right:-20px;
-  background-image:url(images/sprite-rtl.png);
+  background-image:url(../images/sprite-rtl.png);
   }
 
 html.js input.form-autocomplete { background-position: 2px 7px; }

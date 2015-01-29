@@ -208,7 +208,7 @@ select.form-select:focus {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   border: 0;
-  background: #444 url(images/buttons.png) -4000px 50% no-repeat;
+  background: #444 url(../images/buttons.png) -4000px 50% no-repeat;
   display: block;
   position: absolute;
   height: 20px;
@@ -224,7 +224,7 @@ select.form-select:focus {
   font-size: 100%;
   font-weight: normal;
   text-transform: uppercase;
-  background: url(images/bleeds.png) 0px -30px repeat-x;
+  background: url(../images/bleeds.png) 0px -30px repeat-x;
   border-radius: 6px 6px 5px 5px;
   border: 0;  
   -moz-border-radius: 6px 6px 5px 5px;

@@ -151,7 +151,7 @@ td ul.links.inline.operations li:not(:last-child) {
   height:20px;
   text-indent:-999px;
   overflow:hidden;
-  background:url(images/bleeds.png) -40px -120px no-repeat;
+  background:url(../images/bleeds.png) -40px -120px no-repeat;
   }
 
 
@@ -372,7 +372,7 @@ table .item-list,
   z-index:5;
 
   color:#687;
-  background:url(images/popup.png) 50% 100% no-repeat;
+  background:url(../images/popup.png) 50% 100% no-repeat;
   border-top:1px solid #d8e4e0;
 
   width:240px;
@@ -418,7 +418,7 @@ input.form-submit, a.button,
   border-width:1px;
   border-style:solid;
   border-color:#ddd #ddd #ccc;
-  background:#fff url(images/buttons.png) -1px 50% no-repeat;
+  background:#fff url(../images/buttons.png) -1px 50% no-repeat;
   }
 
   input.form-submit:hover,
@@ -432,7 +432,7 @@ input.form-submit, a.button,
   a.button:active,
   .form-actions #edit-cancel:active {
     border-color:#666 #666 #555;
-    background:#666 url(images/buttons.png) -401px 50% no-repeat;
+    background:#666 url(../images/buttons.png) -401px 50% no-repeat;
     color:#222;
     text-shadow:#999 0px 1px 0px;
     }
@@ -597,7 +597,7 @@ body.page-admin div.vertical-tabs .vertical-tabs-panes .vertical-tabs-pane field
     position:absolute;
     left:6px;
     top:6px;
-    background:url(images/bleeds.png) -80px -120px no-repeat;
+    background:url(../images/bleeds.png) -80px -120px no-repeat;
     width: 15px;
     height: 15px;
     display:block;
@@ -691,7 +691,7 @@ body.page-admin div.vertical-tabs .vertical-tabs-panes .vertical-tabs-pane field
 /**
  * Form layout: Default ===============================================
  */
-.form-layout-default { background:url(images/vrule.png) 65% 0% repeat-y; }
+.form-layout-default { background:url(../images/vrule.png) 65% 0% repeat-y; }
 
 .column-main {
   float:left;
@@ -926,7 +926,7 @@ body.tao #admin-toolbar a.menu-hover span.menu-description span.icon {
  * Vertical tabs=======================================================
  */
 .vertical-tabs {
-  background:#fff url(images/vtabs.png) 0px 0px repeat-y;
+  background:#fff url(../images/vtabs.png) 0px 0px repeat-y;
   border:1px solid #ddd;
   margin:0px 0px 10px;
   position:relative;
@@ -977,7 +977,7 @@ body.tao #admin-toolbar a.menu-hover span.menu-description span.icon {
 
   margin:0px 5px 0px 0px;
   padding:0px 5px 0px 25px;
-  background:#999 url(images/buttons.png) -800px 50% no-repeat;
+  background:#999 url(../images/buttons.png) -800px 50% no-repeat;
   color:#fff;
   text-shadow:#666 0px 1px 0px;
   }
@@ -1158,7 +1158,7 @@ body.adminimal-menu { margin-top: 29px!important; }
   border-width:1px;
   border-style:solid;
   border-color:#ddd #ddd #ccc;
-  background:#fff url(images/buttons.png) -1px 50% no-repeat;
+  background:#fff url(../images/buttons.png) -1px 50% no-repeat;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -1176,7 +1176,7 @@ body.adminimal-menu { margin-top: 29px!important; }
 
 .breakpoints-group-operations-link:active {
   border-color:#666 #666 #555;
-  background:#666 url(images/buttons.png) -401px 50% no-repeat;
+  background:#666 url(../images/buttons.png) -401px 50% no-repeat;
   color:#222;
   text-shadow:#999 0 1px 0;
 }

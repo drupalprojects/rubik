@@ -11,11 +11,11 @@
 #branding .breadcrumb strong { float:right; }
 
 #branding .breadcrumb a, #branding .breadcrumb strong {
-  background: url(images/bleeds-rtl.png) 0 -60px no-repeat;
+  background: url(../images/bleeds-rtl.png) 0 -60px no-repeat;
 }
 
 #branding ul.links a {
-  background: url(images/bleeds-rtl.png) 100% -30px no-repeat;
+  background: url(../images/bleeds-rtl.png) 100% -30px no-repeat;
 }
 
 #branding ul.links a:hover { background-position:100% -90px; }
