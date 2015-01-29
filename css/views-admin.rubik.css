@@ -15,7 +15,8 @@
 .views-displays .secondary .open > a:hover {
   color: #59A;
 }
-.views-ui-display-tab-actions .ctools-button-processed li a, .views-ui-display-tab-actions .ctools-button-processed input {
+.views-ui-display-tab-actions .ctools-button-processed li a,
+.views-ui-display-tab-actions .ctools-button-processed input {
   border: none;
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
@@ -167,7 +168,10 @@ select.form-select:focus {
 #edit-options .collapsible {
    float: none;
 }
-.dependent-options, .dependent-options.form-item, .form-item-options-expose-required, .form-item-options-expose-label {
+.dependent-options,
+.dependent-options.form-item,
+.form-item-options-expose-required,
+.form-item-options-expose-label {
   margin-left: 1.5em;
 }
 #views-ajax-popup {
