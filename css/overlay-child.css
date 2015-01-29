@@ -26,7 +26,7 @@ html.js body {
 }
 #overlay-close-wrapper {
   position: absolute;
-  right: 0px;
+  right: 0;
   width: 30px;
 }
 #overlay-close,
@@ -40,7 +40,7 @@ html.js body {
   height: 20px;
   width: 20px;
   margin: 5px;
-  padding: 0px;
+  padding: 0;
 }
 #overlay-close:active {
   background: #333 url(../images/buttons.png) -4400px 50% no-repeat;
@@ -48,31 +48,31 @@ html.js body {
 #overlay-content {
   background: #fff;
   position: relative;
-  padding: 0px 0px 10px;
+  padding: 0 0 10px;
   min-height: 400px;
   -webkit-border-radius: 6px 6px 5px 5px;
      -moz-border-radius: 6px 6px 5px 5px;
           border-radius: 6px 6px 5px 5px;
-  -webkit-box-shadow: #111 0px 0px 10px;
-     -moz-box-shadow: #111 0px 0px 10px;
-          box-shadow: #111 0px 0px 10px;
+  -webkit-box-shadow: #111 0 0 10px;
+     -moz-box-shadow: #111 0 0 10px;
+          box-shadow: #111 0 0 10px;
 }
 #overlay-content .limiter {
-  margin: 0px 20px;
+  margin: 0 20px;
 }
 #branding {
-  -webkit-border-radius: 5px 5px 0px 0px;
-     -moz-border-radius: 5px 5px 0px 0px;
-          border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0 0;
+     -moz-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
 }
 #branding .limiter {
-  margin-left: 0px;
+  margin-left: 0;
 }
 #branding .breadcrumb-depth-0 a,
 #branding .breadcrumb-depth-0 span {
-  -webkit-border-radius: 5px 0px 0px 0px;
-     -moz-border-radius: 5px 0px 0px 0px;
-          border-radius: 5px 0px 0px 0px;
+  -webkit-border-radius: 5px 0 0 0;
+     -moz-border-radius: 5px 0 0 0;
+          border-radius: 5px 0 0 0;
 }
 /* Tabs on the overlay. */
 #overlay-tabs {
@@ -83,12 +83,12 @@ html.js body {
   position: absolute;
   top: 5px;
   right: 25px;
-  padding: 0px;
+  padding: 0;
 }
 #overlay-titlebar .add-or-remove-shortcuts a {
   background-color: #444;
 }
 #overlay-titlebar .add-or-remove-shortcuts a:active {
   background-color: #333;
-  text-shadow: #555 0px 1px 0px;
+  text-shadow: #555 0 1px 0;
 }

@@ -355,9 +355,9 @@
   -webkit-border-radius: 6px 6px 5px 5px;
      -moz-border-radius: 6px 6px 5px 5px;
           border-radius: 6px 6px 5px 5px;
-  -webkit-box-shadow: #111 0px 0px 10px;
-     -moz-box-shadow: #111 0px 0px 10px;
-          box-shadow: #111 0px 0px 10px;
+  -webkit-box-shadow: #111 0 0 10px;
+     -moz-box-shadow: #111 0 0 10px;
+          box-shadow: #111 0 0 10px;
   border: 0;
 }
 .ui-dialog .ui-dialog-titlebar {
@@ -390,7 +390,7 @@
   background: #666;
   color: #fff;
   border-color: #555;
-  text-shadow: #222 0px -1px 0px;
+  text-shadow: #222 0 -1px 0;
 }
 .overlay {
   padding-right: 26px;

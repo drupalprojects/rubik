@@ -30,29 +30,29 @@ a {
   text-decoration: none;
 }
 .limiter {
-  margin: 0px 30px;
+  margin: 0 30px;
 }
 /* Skip to content link. */
 #skip-link {
   width: 200px;
-  height: 0px;
+  height: 0;
   left: 50%;
   margin-left: -100px;
 }
 #skip-link a:hover,
 #skip-link a:active,
 #skip-link a:focus {
-  left: 0px;
+  left: 0;
   z-index: 20;
   text-align: center;
   width: 200px;
   background: #333;
   color: #fff;
   opacity: .9;
-  padding: 10px 0px;
-  -webkit-border-radius: 0px 0px 5px 5px;
-     -moz-border-radius: 0px 0px 5px 5px;
-          border-radius: 0px 0px 5px 5px;
+  padding: 10px 0;
+  -webkit-border-radius: 0 0 5px 5px;
+     -moz-border-radius: 0 0 5px 5px;
+          border-radius: 0 0 5px 5px;
 }
 /* "Rounded" elements. */
 a.button,
@@ -69,13 +69,13 @@ input.teaser-button,
 input.form-submit,
 a.button,
 .form-actions #edit-cancel {
-  -webkit-box-shadow: #ddd 0px 1px 1px;
-     -moz-box-shadow: #ddd 0px 1px 1px;
-          box-shadow: #ddd 0px 1px 1px;
+  -webkit-box-shadow: #ddd 0 1px 1px;
+     -moz-box-shadow: #ddd 0 1px 1px;
+          box-shadow: #ddd 0 1px 1px;
 }
 /* "Embossed" elements. */
 table th {
-  text-shadow: #fff 0px 1px 0px;
+  text-shadow: #fff 0 1px 0;
 }
 /* General styles end */
 
@@ -83,7 +83,7 @@ table th {
  * Branding
  ******************************************************************************/
 #branding {
-  background: url(../images/bleeds.png) 0px -30px repeat-x;
+  background: url(../images/bleeds.png) 0 -30px repeat-x;
   color: #ccc;
   font-size: 11px;
   height: 30px;
@@ -102,7 +102,7 @@ table th {
   background-position: 0% -90px;
 }
 #branding .breadcrumb {
-  padding: 0px;
+  padding: 0;
   float: left;
   font-weight: normal;
 }
@@ -159,18 +159,18 @@ table th {
  * Page title
  ******************************************************************************/
 #page-title {
-  background: #fff url(../images/bleeds.png) 0px -350px repeat-x;
+  background: #fff url(../images/bleeds.png) 0 -350px repeat-x;
 }
 #page-title .limiter {
   position: relative;
 }
 #page-title .page-title {
   float: left;
-  padding: 15px 10px 15px 0px;
+  padding: 15px 10px 15px 0;
   line-height: 30px;
   min-height: 30px;
-  -webkit-text-shadow: #fff 0px 1px 0px;
-          text-shadow: #fff 0px 1px 0px;
+  -webkit-text-shadow: #fff 0 1px 0;
+          text-shadow: #fff 0 1px 0;
   letter-spacing: -1px;
   font-weight: normal;
   font-size: 20px;
@@ -185,18 +185,18 @@ table th {
   font-size: 11px;
 }
 .add-or-remove-shortcuts {
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 .action-links {
-  padding: 20px 0px 20px 10px;
+  padding: 20px 0 20px 10px;
 }
 .action-links a {
   background-color: #7bc;
-  text-shadow: #38a 0px 1px 0px;
+  text-shadow: #38a 0 1px 0;
 }
 .add-or-remove-shortcuts a {
   background-color: #999;
-  text-shadow: #666 0px 1px 0px;
+  text-shadow: #666 0 1px 0;
 }
 /* Page title end */
 
@@ -206,25 +206,25 @@ table th {
  ******************************************************************************/
 .tabs {
   float: right;
-  right: 0px;
+  right: 0;
 }
 .primary-tabs {
   float: left;
   height: 30px;
-  margin: 15px 0px 0px;
+  margin: 15px 0 0;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
 }
 div.pager {
-  margin: 10px 0px 0px;
+  margin: 10px 0 0;
   height: 30px;
 }
 .pager li,
 .primary-tabs li {
   height: 30px;
   position: relative;
-  background: #eee url(../images/bleeds.png) 50% 0px no-repeat;
+  background: #eee url(../images/bleeds.png) 50% 0 no-repeat;
 }
 .pager a,
 .pager span,
@@ -234,7 +234,7 @@ div.pager {
   min-width: 70px;
   padding: 5px 10px;
   color: #333;
-  text-shadow: #fff 0px 1px 0px;
+  text-shadow: #fff 0 1px 0;
 }
 .pager a,
 .pager span {
@@ -247,17 +247,17 @@ div.pager {
 }
 .pager li:first-child,
 .primary-tabs li:first-child {
-  -webkit-border-radius: 5px 0px 0px 5px;
-     -moz-border-radius: 5px 0px 0px 5px;
-          border-radius: 5px 0px 0px 5px;
-  background-position: 0% 0px;
+  -webkit-border-radius: 5px 0 0 5px;
+     -moz-border-radius: 5px 0 0 5px;
+          border-radius: 5px 0 0 5px;
+  background-position: 0% 0;
 }
 .pager li:last-child,
 .primary-tabs li:last-child {
-  -webkit-border-radius: 0px 5px 5px 0px;
-     -moz-border-radius: 0px 5px 5px 0px;
-          border-radius: 0px 5px 5px 0px;
-  background-position: 100% 0px;
+  -webkit-border-radius: 0 5px 5px 0;
+     -moz-border-radius: 0 5px 5px 0;
+          border-radius: 0 5px 5px 0;
+  background-position: 100% 0;
 }
 .pager li.pager-current,
 .primary-tabs li.active {
@@ -266,14 +266,14 @@ div.pager {
 .pager li.pager-current span,
 .primary-tabs li.active a {
   color: #fff;
-  text-shadow: #38a 0px 1px 0px;
+  text-shadow: #38a 0 1px 0;
 }
 /* Secondary tabs, nested */
 .secondary-tabs {
   min-width: 150px;
   float: left;
   position: relative;
-  margin: 5px 5px 5px 0px;
+  margin: 5px 5px 5px 0;
   font-size: 11px;
   background: #59a url(../images/buttons.png) -800px 50% no-repeat;
   -webkit-border-radius: 3px;
@@ -294,9 +294,9 @@ ul.secondary-tabs li a {
 }
 .secondary-tabs a {
   color: #fff;
-  text-shadow: #38a 0px 1px 0px;
+  text-shadow: #38a 0 1px 0;
   display: none;
-  padding: 0px 10px 0px 25px;
+  padding: 0 10px 0 25px;
 }
 .secondary-tabs:hover a,
 .secondary-tabs .active a {
@@ -310,14 +310,14 @@ ul.secondary-tabs li a {
   background: #389 url(../images/buttons.png) -800px 50% no-repeat;
 }
 .secondary-tabs li:last-child a:hover {
-  -webkit-border-radius: 0px 0px 3px 3px;
-     -moz-border-radius: 0px 0px 3px 3px;
-          border-radius: 0px 0px 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
+     -moz-border-radius: 0 0 3px 3px;
+          border-radius: 0 0 3px 3px;
 }
 .secondary-tabs li:first-child a:hover {
-  -webkit-border-radius: 3px 3px 0px 0px;
-     -moz-border-radius: 3px 3px 0px 0px;
-          border-radius: 3px 3px 0px 0px;
+  -webkit-border-radius: 3px 3px 0 0;
+     -moz-border-radius: 3px 3px 0 0;
+          border-radius: 3px 3px 0 0;
 }
 ul.secondary.tabs {
   position: static;
@@ -345,7 +345,7 @@ div.node {
   border-width: 1px;
   border-color: #ddd;
   background: #fff url(../images/vrule.png) 65% 0% repeat-y;
-  margin: 0px 0px 10px;
+  margin: 0 0 10px;
 }
 /* Make large images display within the parent container. This will prevent
 messing up the layout if a wide image needs to be displayed in content. */
@@ -383,7 +383,7 @@ div.node .column-side .column-wrapper {
 }
 .comment-links,
 .node-links {
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 .help-page .help-page-links ul.links {
   -webkit-column-count: 2;
@@ -397,12 +397,12 @@ div.node .column-side .column-wrapper {
 }
 .column-side ul.links a,
 .column-side ul.links span {
-  padding: 0px 10px;
+  padding: 0 10px;
   display: block;
   float: none;
 }
 .column-side ul.links span a {
-  padding: 0px;
+  padding: 0;
   display: inline;
 }
 .column-side ul.links a.active,
@@ -414,7 +414,7 @@ div.node .column-side .column-wrapper {
 }
 .comment-title,
 .node-title {
-  margin: 0px 0px 20px;
+  margin: 0 0 20px;
   font-weight: normal;
   font-size: 16px;
 }
@@ -476,7 +476,7 @@ div.views-exposed-form input.form-autocomplete {
   color: #fff;
   display: block;
   padding: 0 7px;
-  text-shadow: #38a 0px 1px 0px;
+  text-shadow: #38a 0 1px 0;
 }
 .view-workbench-moderation tbody .views-field-moderation-actions li a:hover {
   background-color: #52a8be;

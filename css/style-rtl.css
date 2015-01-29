@@ -117,7 +117,7 @@ div.node {
   background-position: 35% 0%;
 }
 #help-text .column-main .column-wrapper {
-  padding-left: 0px;
+  padding-left: 0;
   padding-right: 59px;
 }
 #help-text .column-main .column-wrapper span.icon {
@@ -145,13 +145,13 @@ div.node {
 #content dl.multiselect,
 #content dl.multiselect dt,
 #content dl.multiselect dd {
-  margin: 0px 0px 0px 10px;
+  margin: 0 0 0 10px;
 }
 /* Update options. */
 .admin-options label,
 .admin-options .form-item {
   margin-left: 10px;
-  margin-right: 0px;
+  margin-right: 0;
   float: right;
 }
 /* Tabs and shortcut icons. */
