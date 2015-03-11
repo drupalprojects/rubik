@@ -453,7 +453,6 @@ div.views-exposed-form div.views-submit-button {
   margin-right: 1em;
 }
 div.views-exposed-form input.form-text,
-div.views-exposed-form select.form-select,
 div.views-exposed-form input.form-autocomplete {
   height: 28px;
 }

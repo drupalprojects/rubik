@@ -485,8 +485,11 @@ a.button.remove:active {
 .media-widget .preview {
   min-height: 35px;
 }
-select.form-select {
+select:not([multiple]).form-select {
   height: 28px;
+}
+select[multiple] {
+  max-height: 84px;
 }
 input.form-autocomplete,
 input.form-text,
