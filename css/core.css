@@ -1098,7 +1098,7 @@ div.ctools-modal-content .color-form .form-item input {
   display: inline-block;
   position: fixed;
   top: 5px;
-  z-index: 12;
+  z-index: 11;
 }
 .admin-menu #content .column-side .column-wrapper.fixed {
   top: 40px;
