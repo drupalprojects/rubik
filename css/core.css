@@ -1242,5 +1242,23 @@ td.ctools-export-ui-operations {
 body.adminimal-menu {
   margin-top: 29px!important;
 }
+body.adminimal-menu .admin-menu-search > .form-item {
+  border: none;
+  position: static;
+}
+body.adminimal-menu #admin-menu-search input[type="text"] {
+  height: 28px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+body.adminimal-menu #admin-menu-search input[type="text"]:hover,
+body.adminimal-menu #admin-menu-search input[type="text"]:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0;
+     -moz-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+body.adminimal-menu #admin-menu-search input[type="text"]:focus {
+  background: #666;
+}
 /* Other contrib modules end */
-
