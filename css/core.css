@@ -488,9 +488,6 @@ a.button.remove:active {
 select:not([multiple]).form-select {
   height: 28px;
 }
-select[multiple] {
-  max-height: 84px;
-}
 input.form-autocomplete,
 input.form-text,
 input.form-file,
