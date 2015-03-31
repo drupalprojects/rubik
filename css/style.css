@@ -209,7 +209,6 @@ table th {
   right: 0;
 }
 .primary-tabs {
-  float: left;
   height: 30px;
   margin: 15px 0 0;
   -webkit-border-radius: 5px;
@@ -225,6 +224,7 @@ div.pager {
   height: 30px;
   position: relative;
   background: #eee url(../images/bleeds.png) 50% 0 no-repeat;
+  margin-bottom: 10px;
 }
 .pager a,
 .pager span,
