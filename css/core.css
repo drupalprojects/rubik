@@ -559,6 +559,12 @@ fieldset legend {
   float: left;
   width: 100%;
 }
+.fieldset-content .fieldset {
+  margin: 0;
+}
+.fieldset-content .fieldset + .fieldset {
+  margin-top: 10px;
+}
 body.page-admin div.vertical-tabs .vertical-tabs-panes .vertical-tabs-pane fieldset {
   padding: 0;
 }
