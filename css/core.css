@@ -216,6 +216,10 @@ table.field-multiple-table td {
 .page-admin table tr.odd td {
   background-color: #fff;
 }
+.page-admin table tr:hover,
+.page-admin table tr:hover td {
+  background-color: #EEE;
+}
 /* Use Drupal's default colors for Available Updates page statuses */
 .page-admin table tr.warning,
 .page-admin table tr.warning td {
