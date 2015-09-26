@@ -9,7 +9,7 @@ Drupal.behaviors.rubik.attach = function(context, settings) {
   $('div.form:has(div.column-main div.form-actions):not(.rubik-processed)', context).each(function() {
     var form = $(this);
     var offset = $('div.column-side div.form-actions', form).height() + $('div.column-side div.form-actions', form).offset().top;
-    $(window).scroll(function () {
+    $(window).scroll(function() {
       if ($(this).scrollTop() > offset) {
         $('div.column-main .column-wrapper > div.form-actions#edit-actions', form).show();
       }
@@ -50,32 +50,37 @@ Drupal.behaviors.rubik.attach = function(context, settings) {
     $(this).parents('.secondary-tabs').toggleClass('focused');
   });
 
-  // Sticky sidebar
-  // Disable this functionality if the user chooses.
+  // Sticky sidebar functionality.
   var disableSticky = settings.rubik.disable_sticky;
-  if ($('#content .column-side .column-wrapper').length !== 0 && !disableSticky) {
-    var rubikColumn = $('#content .column-side .column-wrapper', context);
-    if(rubikColumn && rubikColumn.offset()){
+  if ($('#content .column-side .column-wrapper').length !== 0 ) {
+
+    // Move fields to sidebar if it exists.
+    $('.rubik_sidebar_field', context).once('rubik', function() {
+      $('.column-side .column-wrapper').append($(this));
+    });
+
+    // Check if the sidebar should be made sticky.
+    if (!disableSticky) {
+      var rubikColumn = $('#content .column-side .column-wrapper', context);
+      if (rubikColumn && rubikColumn.offset()) {
         var rubikStickySidebar = rubikColumn.offset().top;
-        $(window).scroll(function(){
-          if( $(window).scrollTop() > rubikStickySidebar ) {
+        $(window).scroll(function() {
+          if ($(window).scrollTop() > rubikStickySidebar) {
             rubikColumn.each(function() {
               $(this).addClass("fixed");
               $(this).width($(this).parent().width());
             });
-          } else {
+          }
+          else {
             rubikColumn.each(function() {
               $(this).removeClass("fixed");
               $(this).width($(this).parent().width());
             });
           }
         });
+      }
     }
 
-    // Move fields to sidebar.
-    $('.rubik_sidebar_field', context).once('rubik', function() {
-      $('.column-side .column-wrapper').append($(this));
-    });
   }
   
 };
