@@ -1097,7 +1097,6 @@ div.ctools-modal-content .color-form .form-item input {
   padding-bottom: 5px;
 }
 #content .column-side .column-wrapper.fixed {
-  background-color: #FFF;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
@@ -1106,6 +1105,8 @@ div.ctools-modal-content .color-form .form-item input {
   position: fixed;
   top: 5px;
   z-index: 11;
+  /* Necessary to avoid overlap with the left column upon scrolling. */
+  margin-left: 1px;
 }
 .admin-menu #content .column-side .column-wrapper.fixed {
   top: 40px;
