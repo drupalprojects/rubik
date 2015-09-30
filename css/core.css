@@ -513,6 +513,8 @@ select.form-select:hover,
 input.form-autocomplete:focus,
 input.form-text:focus,
 input.form-file:focus,
+input.form-checkbox:focus,
+input.form-radio:focus,
 textarea.form-textarea:focus,
 select.form-select:focus {
   color: #333;
