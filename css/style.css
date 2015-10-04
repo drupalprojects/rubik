@@ -457,6 +457,14 @@ div.views-exposed-form input.form-text,
 div.views-exposed-form input.form-autocomplete {
   height: 28px;
 }
+/* CTools toggle in views display columns. This is displayed while editing or
+creating a view. */
+.views-display-column > .ctools-toggle {
+  margin-top: 14px;
+}
+.views-display-column > .ctools-toggle.ctools-toggle-collapsed {
+  margin-top: 11px;
+}
 /* Module filter "clear" link. */
 .module-filter-clear a {
   margin: 3px 0 0 -35px;
