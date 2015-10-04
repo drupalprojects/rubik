@@ -24,6 +24,7 @@
 }
 #ctools-button-9 {
    z-index: 1;
+   top: 12px;
 }
 #views-ui-edit-form div#edit-actions.form-actions.form-wrapper {
    float: right;
@@ -45,6 +46,15 @@
 }
 #views-ui-edit-form .views-display-top ul.secondary.tabs {
   overflow: inherit;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+#views-ui-edit-form .views-display-top ul.secondary.tabs li {
+  margin-bottom: 0;
+  margin: 0 10px 0 0;
+}
+#views-ui-edit-form .views-display-top ul.secondary.tabs li a.active {
+  border-color: #666;
 }
 #views-ui-edit-form .pager {
   margin: 0;

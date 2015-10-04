@@ -457,6 +457,10 @@ div.views-exposed-form input.form-text,
 div.views-exposed-form input.form-autocomplete {
   height: 28px;
 }
+/* Views header on administrative pages (displayed while editing a view). */
+.views-display-top {
+  padding: 10px;
+}
 /* CTools toggle in views display columns. This is displayed while editing or
 creating a view. */
 .views-display-column > .ctools-toggle {
