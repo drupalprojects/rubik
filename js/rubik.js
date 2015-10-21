@@ -51,7 +51,7 @@ Drupal.behaviors.rubik.attach = function(context, settings) {
   });
 
   // Sticky sidebar functionality.
-  var disableSticky = settings.rubik.disable_sticky;
+  var disableSticky = (settings.rubik !== undefined) ? settings.rubik.disable_sticky : false;
   if ($('#content .column-side .column-wrapper').length !== 0 ) {
 
     // Move fields to sidebar if it exists.
