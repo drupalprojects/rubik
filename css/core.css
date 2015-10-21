@@ -714,9 +714,9 @@ html.js .collapsed .fieldset-content {
   float: left;
   width: 65%;
 }
-  .column-main .column-wrapper {
-    padding-right: 10px;
-  }
+.column-main .column-wrapper {
+  padding-right: 10px;
+}
 .column-side {
   float: right;
   width: 34.99%;
@@ -731,7 +731,8 @@ html.js .collapsed .fieldset-content {
   background: #eee;
   border: 1px solid #ddd;
   padding: 9px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 form .form-actions.container-inline {
   background: transparent;
