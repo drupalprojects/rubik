@@ -83,5 +83,48 @@ Drupal.behaviors.rubik.attach = function(context, settings) {
 
   }
   
+  // Cache the primary tabs.
+  var $primaryTabsWrap = $('.primary-tabs');
+  if ($primaryTabsWrap.length) {
+    var $primaryTabs = $primaryTabsWrap.find('> li');
+    // Trigger adjusting function upon first page load.
+    adjustPrimaryTabs();
+    // Trigger adjusting function upon any screen resizing.
+    $(window).resize(function() {
+      adjustPrimaryTabs();
+    });
+  }
+
+  function adjustPrimaryTabs() {
+    // Get the position of whole element.
+    var parentPosition = $primaryTabs.offset().top;
+    // Complicated count.
+    var count = [];
+    var rowNumber = 1;
+    // Remove remainings of other classes we attached.
+    $primaryTabs.removeClass('last-row-link');
+    $primaryTabs.removeClass('first-row-link');
+    // Loop through and compare the position of each tab.
+    $primaryTabs.each(function(index) {
+      var $this = $(this);
+      // New row.
+      if (count[rowNumber] != $this.offset().top) {
+        // Increase the count for this row.
+        rowNumber++;
+        count[rowNumber] = $this.offset().top;
+        // Add "first" class to this element.
+        $this.addClass('first-row-link');
+        // Add "last" class to the previous element, if there is one.
+        if ($this.prev('li').length) {
+          $this.prev('li').addClass('last-row-link');
+        }
+      }
+      // Add "last" class if this is the last element.
+      if (index === ($primaryTabs.length - 1)) {
+        $this.addClass('last-row-link');
+      }
+    });
+  }
+
 };
 })(jQuery);

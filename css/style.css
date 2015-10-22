@@ -246,18 +246,26 @@ div.pager {
   background-color: #f8f8f8;
 }
 .pager li:first-child,
-.primary-tabs li:first-child {
+.primary-tabs li.first-row-link {
+  background-position: 0% 0;
   -webkit-border-radius: 5px 0 0 5px;
      -moz-border-radius: 5px 0 0 5px;
           border-radius: 5px 0 0 5px;
-  background-position: 0% 0;
 }
 .pager li:last-child,
-.primary-tabs li:last-child {
+.primary-tabs li.last-row-link {
+  background-position: 100% 0;
   -webkit-border-radius: 0 5px 5px 0;
      -moz-border-radius: 0 5px 5px 0;
           border-radius: 0 5px 5px 0;
-  background-position: 100% 0;
+}
+/* This style is necessary in case there is only one tab that goes to the
+second row. */
+.primary-tabs li.first-row-link.last-row-link {
+  background-position: 0% 0;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
 }
 .pager li.pager-current,
 .primary-tabs li.active {
