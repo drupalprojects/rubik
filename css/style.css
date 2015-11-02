@@ -502,4 +502,8 @@ creating a view. */
   background-color: #52a8be;
   color: #fff;
 }
+/* Use monospace font on devel/php form. */
+#devel-execute-form textarea {
+  font-family: monospace;
+}
 /* Fixes for other modules end */
