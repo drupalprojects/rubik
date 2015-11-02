@@ -502,6 +502,10 @@ creating a view. */
   background-color: #52a8be;
   color: #fff;
 }
+/* Make sure that OpenLayers maps are displayed. */
+#page img.olTileImage {
+  max-width: inherit;
+}
 /* Use monospace font on devel/php form. */
 #devel-execute-form textarea {
   font-family: monospace;
