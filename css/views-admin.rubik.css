@@ -229,6 +229,10 @@ select.form-select:focus {
   border: none;
   padding: 8px 10px 8px 0;
 }
+/* Force the Views UI operations table cell to have relative positioning. */
+td.views-ui-operations {
+  position: relative;
+}
 /* Form buttons. */
 .views-ui-dialog .form-buttons {
   background: #EEE;
