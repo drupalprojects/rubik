@@ -1283,4 +1283,11 @@ body.adminimal-menu #admin-menu-search input[type="text"]:focus {
 body.adminimal-menu #admin-menu-search input[type="text"]:focus {
   background: #666;
 }
+/* Date. */
+fieldset.date-combo .container-inline-date .date-padding {
+  padding: 0;
+}
+fieldset.date-combo .container-inline-date > .form-item {
+  margin-bottom: 0;
+}
 /* Other contrib modules end */
