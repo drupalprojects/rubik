@@ -702,6 +702,13 @@ html.js .collapsed .fieldset-content {
 .container-inline {
   margin: 0 0 10px;
 }
+/* File uploads. */
+.form-type-managed-file input[type="submit"].progress-disabled {
+  float: none;
+}
+.form-type-managed-file .ajax-progress-throbber {
+  margin-top: 5px;
+}
 /* Forms end */
 
 /*******************************************************************************
