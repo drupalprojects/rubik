@@ -1260,6 +1260,25 @@ div.ctools-modal-content .color-form .form-item input {
 td.ctools-export-ui-operations {
   position: relative;
 }
+/* Administration Menu. */
+#admin-menu-wrapper {
+  overflow: visible;
+}
+#admin-menu .admin-menu-search .form-item {
+  border: 0;
+}
+#admin-menu .admin-menu-search input.admin-menu-search {
+  height: 19px;
+  padding: 0 5px;
+  border-radius: 0;
+}
+#admin-menu .dropdown .admin-menu-search-results {
+  top: 21px;
+}
+#admin-menu .dropdown li ul,
+#admin-menu .dropdown li li {
+  width: 158px!important;
+}
 /* Adminimal Administration Menu. */
 body.adminimal-menu {
   margin-top: 29px!important;
