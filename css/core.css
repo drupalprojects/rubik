@@ -1275,9 +1275,12 @@ td.ctools-export-ui-operations {
 #admin-menu .dropdown .admin-menu-search-results {
   top: 21px;
 }
+body.adminimal-menu #admin-menu .dropdown .admin-menu-search-results {
+  top: 29px;
+}
 #admin-menu .dropdown li ul,
 #admin-menu .dropdown li li {
-  width: 158px!important;
+  width: 160px!important;
 }
 /* Adminimal Administration Menu. */
 body.adminimal-menu {
@@ -1287,10 +1290,12 @@ body.adminimal-menu .admin-menu-search > .form-item {
   border: none;
   position: static;
 }
+#admin-menu .admin-menu-search input,
 body.adminimal-menu #admin-menu-search input[type="text"] {
   height: 28px;
   padding-top: 0;
   padding-bottom: 0;
+  width: 160px;
 }
 body.adminimal-menu #admin-menu-search input[type="text"]:hover,
 body.adminimal-menu #admin-menu-search input[type="text"]:focus {
