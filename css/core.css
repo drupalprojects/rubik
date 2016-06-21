@@ -564,6 +564,8 @@ fieldset legend {
   display: block;
   float: left;
   width: 100%;
+  position: relative;
+  z-index: 10;
 }
 .fieldset-content .fieldset {
   margin: 0;
