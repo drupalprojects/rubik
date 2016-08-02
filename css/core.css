@@ -1316,4 +1316,20 @@ fieldset.date-combo .container-inline-date .date-padding {
 fieldset.date-combo .container-inline-date > .form-item {
   margin-bottom: 0;
 }
+/* Rooms. */
+.rooms-unit-type-defaults .fieldset-content .form-wrapper {
+  margin-top: 0;
+}
+.rooms-unit-type-defaults .fieldset.titled > .fieldset-content,
+.rooms-unit-type-defaults .container-inline .fieldset-legend .fieldset-content {
+  padding-top: 20px;
+}
+.rooms-unit-type-defaults .rooms-unit-type-guest-capacity {
+  margin: 0 20px 0 0;
+}
+.rooms-unit-type-defaults .rooms-unit-type-child-capacity .fieldset-legend,
+.rooms-unit-type-defaults .rooms-unit-type-guest-capacity .fieldset-legend {
+  background: none;
+  color: #666;
+}
 /* Other contrib modules end */
