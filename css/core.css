@@ -82,7 +82,7 @@ div.status  {
 .confirmation ul li,
 .item-list ul li,
 .prose .item-list li,
-.menu li {
+#page .menu li {
   float: none;
   display: block;
   padding: 5px 10px 4px;
@@ -93,7 +93,7 @@ div.status  {
 .confirmation ul li:last-child,
 .item-list ul li:last-child,
 .prose .item-list li:last-child,
-.menu li:last-child {
+#page .menu li:last-child {
   border-bottom: 0;
   padding-bottom: 5px;
 }
