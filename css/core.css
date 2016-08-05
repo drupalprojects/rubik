@@ -881,6 +881,14 @@ form .form-actions.container-inline {
 .help-items ul {
   margin: 10px 5px;
 }
+/* UI autocomplete element. We will have to force the z-index value because the
+core will set an inline style value to this element and it will not play well on
+pages where a fieldset is right under such element because of different z-index
+value. This is most notable on Rules pages when the data selection mode for a
+field is enabled. */
+ul.ui-autocomplete.ui-menu {
+  z-index: 11!important;
+}
 /* System end */
 
 /*******************************************************************************
