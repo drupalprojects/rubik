@@ -160,6 +160,8 @@ table th {
  ******************************************************************************/
 #page-title {
   background: #fff url(../images/bleeds.png) 0 -350px repeat-x;
+  z-index: 11;
+  position: relative;
 }
 #page-title .limiter {
   position: relative;
